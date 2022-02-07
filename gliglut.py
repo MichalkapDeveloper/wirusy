@@ -1,4 +1,3 @@
-  GNU nano 4.8                                                                                                                       sss                                                                                                                                       
 from pyautogui import *
 from random import *
 while 1:
