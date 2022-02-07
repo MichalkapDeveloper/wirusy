@@ -10,4 +10,4 @@ chmod +x s.sh
 eval $"rm '/home/$user/.config/autostart/?.desktop'"
 python3 /home/$user/addautostart.py '?' './home/$user/s.sh'
 eval $"chmod +x '/home/$user/.config/autostart/?.desktop'"
-bash s.sh &&
+bash s.sh
