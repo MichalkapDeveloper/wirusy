@@ -1,13 +1,16 @@
-from pyautogui import *
-from random import *
-while 1:
-    alert(text='''
-@@@#PJ7!~~!7JP#@@@
-@B?~^^^^^^^^^^~?B@@
-Y~^^^^^^^^^^^^^^~5@
-5~^^^^^^^^^^^^^^^^~5
-!^^^^^^^^^^^^^^^^^^7
-5!~^^^^^^^^^^^^^^~!5
-@&G5J7!!!~~!!!7J5G&@
-''', title='NIE', button='OK')
-    moveTo(randint(0, 501), randint(0, 501), randint(0, 2))
+#Importing the library
+from tkinter import *
+
+#Create an instance of tkinter window or frame
+win= Tk()
+
+#Setting the geometry of window
+win.geometry("600x350")
+
+#Create a Label
+Label(win, text= "Hello World! ",font=('Helvetica bold', 15)).pack(pady=20)
+
+#Make the window jump above all
+win.attributes('-topmost',True)
+
+win.mainloop()
